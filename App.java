@@ -12,11 +12,12 @@ public class App {
         CadastroClientes cc = new CadastroClientes();
 
         cc.carregaDados("Clientes.csv");
+        
         Cliente[] todos = cc.getTodosClientes();
         imprimeDados("Todos clientes",todos);
         Cliente[] homens;
         homens = cc.getClientesPorSexoV1("Male");
-        imprimeDados("Clientes ",homens);
+        imprimeDados("Clientes homens",homens);
         Cliente[] mulheres = cc.getClientesPorSexoV2("Female");
         imprimeDados("Clientes mulheres",mulheres);
     }

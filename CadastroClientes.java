@@ -83,7 +83,6 @@ public class CadastroClientes{
                 cont++;
             }
         }
-        System.out.println(cont);
         // Monta o vetor resposta
         Cliente[] resp = new Cliente[cont];
         int pos = 0;
