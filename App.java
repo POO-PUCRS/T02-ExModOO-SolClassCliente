@@ -1,4 +1,5 @@
-public class App{
+public class App {
+
     public static void imprimeDados(String titulo,Cliente clientes[]){
         System.out.println(titulo+":");
         for(int i=0;i<clientes.length;i++){
@@ -13,8 +14,9 @@ public class App{
         cc.carregaDados("Clientes.csv");
         Cliente[] todos = cc.getTodosClientes();
         imprimeDados("Todos clientes",todos);
-        Cliente[] homens = cc.getClientesPorSexoV1("Male");
-        imprimeDados("Clientes homens",homens);
+        Cliente[] homens;
+        homens = cc.getClientesPorSexoV1("Male");
+        imprimeDados("Clientes ",homens);
         Cliente[] mulheres = cc.getClientesPorSexoV2("Female");
         imprimeDados("Clientes mulheres",mulheres);
     }

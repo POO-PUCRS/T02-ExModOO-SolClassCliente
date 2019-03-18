@@ -64,7 +64,7 @@ public class CadastroClientes{
      }
 
     public Cliente[] getTodosClientes(){
-        if (!dadosOK){
+        if (!dadosOK){ // dadosOk == false
             return null;
         }
         return Arrays.copyOf(clientes,MAX_DADOS);
@@ -83,6 +83,7 @@ public class CadastroClientes{
                 cont++;
             }
         }
+        System.out.println(cont);
         // Monta o vetor resposta
         Cliente[] resp = new Cliente[cont];
         int pos = 0;
