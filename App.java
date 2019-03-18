@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class App{
     public static void imprimeDados(String titulo,Cliente clientes[]){
         System.out.println(titulo+":");
